@@ -2,7 +2,7 @@
 
 ## Props
 
-| 名称 | 类型 | 默认值 | 说明 |
+| 属性名称 | 属性类型 | 默认值 | 属性说明 |
 | :--- | :--- | :--- | :--- |
 | disabled | boolean | false | 是否禁用该表单内的所有表单组件，若设置为 true，则表单内组件上的 disabled 属性不再生效 |
 | display-only | boolean | false | 是否开启仅展示模式 |
@@ -26,13 +26,13 @@
 
 ## Events
 
-| 名称 | 类型 | 说明 |
+| 事件名称 | 事件类型 | 事件说明 |
 | :--- | :--- | :--- |
 | validate | (prop: string, isValid: boolean, message: string) => void | 任一表单项被校验后触发 |
 
 ## Methods
 
-| 名称 | 类型 | 说明 |
+| 方法名称 | 方法类型 | 方法说明 |
 | :--- | :--- | :--- |
 | clearValidate | (prop: string \| string[]) => void | 移除表单项的校验结果，可传入待移除的表单项的 prop ，或者 prop 组成的数组，如不传则移除整个表单的校验结果 |
 | resetFields | () => void | 对整个表单进行重置，将所有字段值重置为初始值并移除校验结果 |
@@ -41,7 +41,7 @@
 
 ## Slots
 
-| 名称 | 说明 |
+| 插槽名称 | 插槽说明 |
 | :--- | :--- |
 | default | 默认插槽，自定义表单内容 |
 
@@ -49,7 +49,7 @@
 
 ### Props(TinyFormItem)
 
-| 名称 | 类型 | 默认值 | 说明 |
+| 属性名称 | 属性类型 | 默认值 | 属性说明 |
 | :--- | :--- | :--- | :--- |
 | error | string | -- | 表单项错误文本，设置该值会使表单验证状态变为 error |
 | extra | string | -- | 表单项额外提示 |
@@ -69,14 +69,14 @@
 
 ### Methods(TinyFormItem)
 
-| 名称 | 类型 | 说明 |
+| 方法名称 | 方法类型 | 方法说明 |
 | :--- | :--- | :--- |
 | clearValidate | () => void | 移除该表单项的校验结果 |
 | resetField | () => void | 对该表单项进行重置，将其值重置为初始值并移除校验结果 |
 
 ### Slots(TinyFormItem)
 
-| 名称 | 说明 |
+| 插槽名称 | 插槽说明 |
 | :--- | :--- |
 | default | 默认插槽 |
 | error | 错误提示内容 |
