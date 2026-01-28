@@ -1,0 +1,19 @@
+{
+  "name": "ui-skills",
+  "version": "1.0.0",
+  "description": "组件库技能表，用于AI识别组件库组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.kxdigit.com/ued/public-product/ui-skills.git"
+  },
+  "keywords": [
+    "tiny-ui",
+    "skills"
+  ],
+  "author": "xiaozhang20",
+  "license": "MIT"
+}
