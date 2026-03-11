@@ -5,7 +5,10 @@ paths:
   - "backend/**/*.json"
 ---
 
-### 技术栈选型规范（根据需求自主选择）
+# 后端研发规范
+后端工程从技术栈选型和工程结构两个方面进行规范。
+
+## 技术栈选型规范（根据需求自主选择）
 1. 框架: Spring Boot 3+
 2. 语言: Java 17
 3. 数据库: MySQL 8.0+ (user: root password: Root@123456)
@@ -16,7 +19,7 @@ paths:
 8. 服务注册与发现: Nacos 2.2.3
 9. 消息队列: Kafka 2.8.1
 
-### 工程结构输出规范
+## 工程结构输出规范
 1. 核心目录结构
    ```bash
    src/main/java/com/yourcompany/projectname
