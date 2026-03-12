@@ -28,19 +28,36 @@ Based on the provided UI design draft images, generate directly runnable Vue3 + 
 
 ## Style Details
 1. Theme Style
-   - Color:
+   - Colors:
+      - Primary Color: #1890FF (Element Plus Default)
+      - Secondary Color: #409EFF (Element Plus Default)
+      - Success Color: #67C23A (Element Plus Default)
+      - Warning Color: #E6A23C (Element Plus Default)
+      - Error Color: #F56C6C (Element Plus Default)
    - Font:
+      - Type: Body Text (PingFangSC-Regular) Bold (PingFangSC-Semibold) Heading (PingFangSC-Medium)
+      - Size: Body Text (14px) Highlight (18px) Heading (22px)
+      - Weight: normal (400), medium (500), bold (800)
+
    - Spacing:
-   - Rounded corners:
+      - xl (16px)
+      - l (12px)
+      - m (8px)
+      - s (4px)
+   - Rounded Corners:
+      - base(4px)
+      - container(8px)
    - Shadow:
+      - m(0 2px 4px rgba(0, 0, 0, 0.1))
+      - xl(0 4px 8px rgba(0, 0, 0, 0.15))
 2. Interaction Specifications
-   - Click:
-   - Input:
-   - Disable:
-   - Loading:
-   - Error handling:
-   - Success handling:
-   - Delete/Remove/Dangerous Behavior:
+   - Click: Mouse cursor style is pointer, clickable
+   - Input: Length limit 50 characters, validation for required fields
+   - Disable: Mouse cursor style is not-allowed, not clickable
+   - Loading: Add loading effect
+   - Error Handling: Call the Message component to display error message (e.g., message.error)
+   - Success Handling: Call the Message component to display success message (e.g., message.success)
+   - Delete/Remove/Dangerous Behavior: Call the confirm-dialog component, perform deletion operation after confirmation
 
 ## Output
 1. Code Structure

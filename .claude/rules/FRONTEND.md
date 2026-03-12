@@ -28,21 +28,37 @@ paths:
    - 图片使用懒加载，样式避免深层嵌套（CSS嵌套不超过3层）
    - 非必要不引入全局样式，组件样式作用域隔离
 
-## 页面风格细节规范
+## 风格细节规范
 1. 主题风格
-   - 颜色:
+   - 颜色: 
+     - 主色: #1890FF (Element Plus默认)
+     - 次色: #409EFF (Element Plus默认)
+     - 成功色: #67C23A (Element Plus默认)
+     - 警告色: #E6A23C (Element Plus默认)
+     - 错误色: #F56C6C (Element Plus默认)
    - 字体:
-   - 间距:
+     - 型号: 正文(PingFangSC-Regular) 加粗(PingFangSC-Semibold) 标题(PingFangSC-Medium)
+     - 大小: 正文(14px) 突出(18px) 标题(22px)
+     - 粗细: normal(400)、medium(500)、bold(800)
+   - 间距: 
+      - xl(16px)
+      - l(12px)
+      - m(8px)
+      - s(4px)
    - 圆角:
-   - 阴影:
+      - base(4px)
+      - container(8px)
+   - 阴影: 
+     - m(0 2px 4px rgba(0, 0, 0, 0.1))
+     - xl(0 4px 8px rgba(0, 0, 0, 0.15))
 2. 交互规范
-   - 点击:
-   - 录入:
-   - 禁用:
-   - 加载中:
-   - 错误处理:
-   - 成功处理:
-   - 删除\移除\危险行为:
+   - 点击: 鼠标样式为pointer，可点击
+   - 录入: 长度限制50字符、判断是否必填项校验
+   - 禁用: 鼠标样式为not-allowed，不可点击
+   - 加载中: 添加loading效果
+   - 错误处理: 调用Message 消息提示组件，显示错误提示（如：message.error）
+   - 成功处理: 调用Message 消息提示组件，显示成功提示（如：message.success）
+   - 删除\移除\危险行为: 调用confirm-dialog组件，确认后执行删除操作
 
 ## 工程结构输出规范
 1. 代码结构
